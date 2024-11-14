@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovative technology</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Innovative technology</h1>
+        <div class="cart">
+            <a href="#" onclick="showCart()">Carrito (0)</a>
+        </div>
+    </header>
+
+    <h1>Productos TI</h1>
+    <section class="products">
+        <div class="product">
+            <img src="Imagenes/producto1.jpeg" alt="Producto 1">
+            <h3>HP Laptop</h3>
+            <p>$4,000.00</p>
+            <button onclick="addToCart('HP Laptop', 4000.00)">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="Imagenes/producto2.jpeg" alt="Producto 2">
+            <h3>Samsumg Galaxy</h3>
+            <p>$1,000.00</p>
+            <button onclick="addToCart('Samsumg Galaxy', 1000.00)">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="Imagenes/producto3.jpeg" alt="Producto 3">
+            <h3>Apple</h3>
+            <p>$500.00</p>
+            <button onclick="addToCart('Apple', 500.00)">Agregar al carrito</button>
+        </div>
+        <div class="product">
+            <img src="Imagenes/producto4.jpeg" alt="Producto 4">
+            <h3>Impresoras y escaneres</h3>
+            <p>$2,000.00</p>
+            <button onclick="addToCart('Impresoras y escaneres', 2000.00)">Agregar al carrito</button>
+        </div>
+
+    </section>
+
+    <h1>Servicios TI</h1>
+    <section class="services">
+        <div class="service">
+            <img src="Imagenes/servicio1.jpeg" alt="servicio 1">
+            <h3>Diseño de Sistemas</h3>
+            <p>$100.00</p>
+            <button onclick="addToCart('Diseño de Sistemas', 100.00)">Agregar al carrito</button>
+        </div>
+        <div class="service">
+            <img src="Imagenes/servicio2.jpeg" alt="servicio 2">
+            <h3>Desarrollo web</h3>
+            <p>$500.00</p>
+            <button onclick="addToCart('Desarrollo web', 500.00)">Agregar al carrito</button>
+        </div>
+        <div class="service">
+            <img src="Imagenes/servicio3.jpeg" alt="servicio 3">
+            <h3>Soporte tecnico</h3>
+            <p>$100.00</p>
+            <button onclick="addToCart('Soporte tecnico', 100.00)">Agregar al carrito</button>
+        </div>
+        <div class="service">
+            <img src="Imagenes/servicio4.jpeg" alt="servicio 4">
+            <h3>Almacenamiento de nube</h3>
+            <p>$600.00</p>
+            <button onclick="addToCart('Almacenamiento de nube', 600.00)">Agregar al carrito</button>
+        </div>
+    </section>
+
+    <div class="cart-popup" id="cart-popup">
+        <div class="cart-popup-content">
+            <h2>Carrito de Compras</h2>
+            <ul id="cart-items">
+                <!-- Los productos se agregarán dinámicamente aquí -->
+            </ul>
+            <p>Total: $<span id="total-price">0</span></p>
+            <button onclick="checkout()">Finalizar compra</button>
+            <button onclick="closeCart()">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
